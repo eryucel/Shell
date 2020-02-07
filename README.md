@@ -4,17 +4,20 @@ C dili ile Linux ortamında geliştirilmiş bir komut satırı yorumlayıcısı
 
 Bir dosyayı komuta yönlendirmek için giriş yönlendirme(<) kullanınız.
 Alt prosesin standart girdisini verilen giriş dosyasına yönlendirir.
+
 Örnek:
     > cat < file.txt
     
 Bir komutu dosyaya yönlendirmek için çıkış yönlendirme(>) kullanınız.
 Alt prosesin standart çıktısını dosyaya yönlendirir. 
+
 Örnek:
     > cat file1 > file2
     
 Komutun arkaplanda çalıştırılması için (&) kullanınız.
 Arkaplandaki işlem bittiğinde ekrana 
     [pid] retval: <exitcode> şeklinde çıktı basılır.
+    
 Örnek:
     > sleep 5 &
     > cat file.txt
